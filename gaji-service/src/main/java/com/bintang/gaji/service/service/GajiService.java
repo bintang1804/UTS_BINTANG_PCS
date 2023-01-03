@@ -8,12 +8,14 @@ import com.bintang.gaji.service.entity.Gaji;
 import com.bintang.gaji.service.repository.GajiRepository;
 import com.bintang.gaji.service.vo.ResponseTemplateVO;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 /**
  *
  * @author Bintang
  */
+@Service
 public class GajiService {
 
     @Autowired
@@ -28,9 +30,8 @@ public class GajiService {
 
     public ResponseTemplateVO getGaji(Long gajiId) {
         ResponseTemplateVO vo = new ResponseTemplateVO();
-        Pegawai pegawai
-                = restTemplate.getForObject("http://localhost:8090/pegawai/"
-                        + Gaji.getGajiId(), Pegawai.class);
+        Pegawai pegawai = restTemplate.getForObject("http://localhost:8090/pegawai/"
+                + gaji.getPegawaiId(), PegawaiService.class);
         vo.setGaji(gaji);
         vo.setPegawai(pegawai);
         return vo;

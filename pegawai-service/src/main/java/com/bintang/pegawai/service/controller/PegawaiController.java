@@ -31,7 +31,7 @@ public class PegawaiController {
         return pegawaiService.savePegawai(pegawai);
     }
 
-    @GetMapping("/{id)}")
+    @GetMapping("/{id)")
     public Pegawai findPegawaiById(@PathVariable("id") Long pegawaiId) {
         return pegawaiService.findPegawaiById(pegawaiId);
     }

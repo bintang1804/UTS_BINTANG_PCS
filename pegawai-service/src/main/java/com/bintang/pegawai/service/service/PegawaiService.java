@@ -7,12 +7,14 @@ package com.bintang.pegawai.service.service;
 import com.bintang.pegawai.service.entity.Pegawai;
 import com.bintang.pegawai.service.repository.PegawaiRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 /**
  *
  * @author Bintang
  */
+@Service
 public class PegawaiService {
 
     @Autowired
