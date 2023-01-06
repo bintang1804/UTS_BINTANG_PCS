@@ -21,25 +21,15 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 
-public class Gaji {
+public class Pegawai {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long gajiId;
     private Long pegawaiId;
-    private Long tanggal;
-    private Long gapok;
-    private Long tunj_anak;
-    private Long tunj_istri;
-    private Long gaji_bersih;
+    private Long pegawaiNip;
+    private String pegawaiNama;
+    private String pegawaiAlamat;
 
-    public long getGapok() {
-        return gapok;
-    }
 
-    public long getGajiBersih() {
-        gaji_bersih = gapok + tunj_anak + tunj_istri;
-        return gaji_bersih;
-    }
 
 }

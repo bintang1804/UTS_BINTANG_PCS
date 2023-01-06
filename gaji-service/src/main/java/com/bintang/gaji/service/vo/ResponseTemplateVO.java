@@ -5,6 +5,7 @@
 package com.bintang.gaji.service.vo;
 
 import com.bintang.gaji.service.entity.Gaji;
+import com.bintang.gaji.service.entity.Pegawai;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -18,6 +19,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class ResponseTemplateVO {
 
-    private Gaji gajiService;
-    private PegawaiService pegawaiService;
+    private Gaji gaji;
+    private Pegawai pegawai;
 }

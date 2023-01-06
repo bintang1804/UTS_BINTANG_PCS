@@ -5,7 +5,7 @@
 package com.bintang.gaji.service.controller;
 
 import com.bintang.gaji.service.entity.Gaji;
-import com.bintang.gaji.service.service.GajiService;
+import com.bintang.gaji.service.vo.GajiService;
 import com.bintang.gaji.service.vo.ResponseTemplateVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
